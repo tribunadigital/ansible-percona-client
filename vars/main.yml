@@ -33,3 +33,6 @@ percona_client_version_deb: "{{ '' if percona_client_version is version('8.0', '
 
 percona_client_dependencies:
   - "percona-server-client{{ percona_client_version_deb }}"
+
+percona_client_asc_key: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x4d1bb29d63d98e422b2113b19334a25f8507efa5'
+percona_client_asc_path: '/etc/apt/keyrings/percona.asc'
